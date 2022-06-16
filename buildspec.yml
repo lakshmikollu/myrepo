@@ -1,1 +1,19 @@
-dencfnerufuejsvjr
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo Entered the install phase...
+      - echo I am here in step install
+    finally:
+      - echo This always runs even if the update or install command fails 
+  pre_build:
+    commands:
+      - echo Entered the pre_build phase...
+  build:
+    commands:
+      - echo Entered the build phase...
+
+  post_build:
+    commands:
+      - echo Entered the post_build phase...
+      - echo Build completed on `date`
