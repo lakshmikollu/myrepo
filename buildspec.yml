@@ -9,11 +9,9 @@ phases:
   pre_build:
     commands:
       - echo Entered the pre_build phase...
-  build:
-    commands:
-      - echo Entered the build phase...
+  
 
   post_build:
     commands:
       - echo Entered the post_build phase...
-      - ech Build completed on `date`
+      - echo Build completed on `date`
